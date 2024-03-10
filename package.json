@@ -14,6 +14,7 @@
     "prebuild-src": "del-cli dist",
     "build-src": "rollup --config --file dist/www/js/bundle.js",
     "del-dist": "del-cli dist",
+    "test-mocha": "mocha ./tests/unit/spec/tests.js",
     "test": "testcafe all ./tests/unit/initTestCafe.js --app \"http-server --silent -p 8080 .\"",
     "test-unit-browsers": "testcafe firefox:headless,chrome:headless,edge:headless ./tests/unit/initTestCafe.js --app \"http-server --silent -p 8080 .\"",
     "test-unit-firefox": "testcafe firefox:headless ./tests/unit/initTestCafe.js --app \"http-server --silent -p 8080 .\"",
